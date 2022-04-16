@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500&display=swap');
+
+body {
+	background: black;
+	color: white;
+	font-family: 'Hind Siliguri', sans-serif;
+}
+
+.bolded {
+	color: white;
+}
+
+h1, h4 {
+ text-align: center;
+padding-bottom: 0;
+	color: #c9c9c9;
+}
+
+h4 {
+	font-weight: 400;
+}
+
+#game-board {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.letter-box {
+  border: 2px solid rgb(58, 58, 60);
+	background-color:  rgb(58, 58, 60);
+  border-radius: 3px;
+  margin: 3px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+	.letter-box {
+		height: 2rem;
+		width: 2rem;
+	}
+}
+
+.filled-box {
+  border: 2px solid #1a1a1a;
+}
+
+.letter-row {
+  display: flex;
+}
+
+#keyboard {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#keyboard div {
+  display: flex;
+}
+
+.row {
+  margin: 0.3rem 0;
+}
+
+.key {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.7rem;
+	background-color: rgb(58, 58, 60);
+	color: white;
+	border: none;
+	border-radius: 6px;
+  margin: 0 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.watermark {
+position: fixed;
+color: black;
+background-color: white;
+right: 10px;
+bottom: 10px;
+padding: 2px 7px;
+border: 1px solid white;
+border-radius: 5px;
+font-size: 12px;
+line-height: 24px;
+text-decoration: none;
+font-weight: 500;
+	}
